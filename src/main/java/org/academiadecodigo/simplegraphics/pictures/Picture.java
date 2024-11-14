@@ -81,7 +81,7 @@ public class Picture implements Shape, Movable {
             this.source = source;
 
             // Load from the web
-            if (source.startsWith("http://")) {
+            if (source.startsWith("http://") || source.startsWith("https://")) {
 
                 image = ImageIO.read(new URL(source).openStream());
 
