@@ -273,6 +273,12 @@ public class Picture implements Shape, Movable {
         org.academiadecodigo.simplegraphics.graphics.Canvas.getInstance().repaint();
     }
 
+    public void shrink(double dw, double dh) {
+        xGrow -= dw;
+        yGrow -= dh;
+        org.academiadecodigo.simplegraphics.graphics.Canvas.getInstance().repaint();
+    }
+
     /**
      * Shows this picture on the canvas.
      */
